@@ -21,5 +21,5 @@ endif(NOT OPENGL_FOUND)
 
 find_package( OpenCV REQUIRED )
 
-add_executable( render_camera render_camera.cpp )
-target_link_libraries( render_camera -lGL -lglut -lglfw -lGLEW -lGLU ${OpenCV_LIBS})
+add_executable(camera camera.cpp )
+target_link_libraries(camera -lGL -lglut -lglfw -lGLEW -lGLU ${OpenCV_LIBS})
